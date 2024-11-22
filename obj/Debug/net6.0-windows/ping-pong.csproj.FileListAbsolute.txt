@@ -36,3 +36,5 @@ C:\Users\Admin\Documents\GitHub\monogame2alex\ping-pong\obj\Debug\net6.0-windows
 C:\Users\Admin\Documents\GitHub\monogame2alex\ping-pong\obj\Debug\net6.0-windows\ping-pong.genruntimeconfig.cache
 C:\Users\Admin\Documents\GitHub\monogame2alex\ping-pong\obj\Debug\net6.0-windows\ref\ping-pong.dll
 C:\Users\Admin\Documents\GitHub\monogame2alex\ping-pong\bin\Debug\net6.0-windows\Content\pixel.xnb
+C:\Users\Admin\Documents\GitHub\monogame2alex\ping-pong\obj\Debug\net6.0-windows\ping-pong.sourcelink.json
+C:\Users\Admin\Documents\GitHub\monogame2alex\ping-pong\bin\Debug\net6.0-windows\Content\score.xnb
