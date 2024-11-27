@@ -77,12 +77,24 @@ public class Game1 : Game
             if(ball.Y<=0 ||ball.Y+ ball.Height>=480){
                 velocityY*=-1;
             }
-            if(ball.X <=0||ball.X + ball.Width>=800){
+            if(ball.X <=0){
                 ball.X=390;
                 ball.Y=230;
                 velocityX=2;
                 velocityY=2;
+                scorerightplayer++;
             }
+
+            else if(ball.X + ball.Width>=800){
+                ball.X=390;
+                ball.Y=230;
+                velocityX=2;
+                velocityY=2;
+                scoreleftplayer++;
+            }
+
+
+
 
         base.Update(gameTime);
     }
