@@ -10,15 +10,27 @@ namespace ping_pong
         private Rectangle rectangle;
         private int speed =1;
         private Keys up;
-        private Keys dowwn;
-        public paddel(Texture2D t){
-            texture=t;
+        private Keys down;
+        public Rectangle Rectangle{
+            get{return rectangle;}
+        }
+
+        public paddel(Texture2D t, Rectangle r, Keys u,Keys d){
+            texture = t;
+            rectangle = r;
+            up = u;
+            down = d;
         }
         public void Update(){
-            KeyboardState Kstate= Keyboard.GetState();
-            if(Kstate.IsKeyDown(up)){
-                rectangle.Y-=speed;
+            KeyboardState kState = Keyboard.GetState();
+            if(kState.IsKeyDown(up) && rectangle.Y >= 0){
+                rectangle.Y -=speed;
             }
+            if(kState.IsKeyDown(down) && rectangle.Y <= 380){
+                rectangle.Y += speed;
+            }
+
+
         }
         public void Draw(SpriteBatch spriteBatch){
             spriteBatch.Draw(texture,rectangle,Color.Green);
